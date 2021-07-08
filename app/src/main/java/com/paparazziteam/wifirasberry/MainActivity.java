@@ -91,10 +91,9 @@ public class MainActivity extends AppCompatActivity {
                 InputStreamReader dataInputStream = new InputStreamReader(socket.getInputStream());
                 dataRasberry= dataInputStream.getEncoding();
 
-
-
                 dataInputStream.close();
                 socket.close();
+
             }catch (UnknownHostException e)
             {
                 e.printStackTrace();
